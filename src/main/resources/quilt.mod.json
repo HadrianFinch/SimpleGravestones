@@ -1,0 +1,41 @@
+{
+    "schema_version": 1,
+    "quilt_loader": {
+        "group": "${group}",
+        "id": "simple_gravestones",
+        "version": "${version}",
+        "metadata": {
+            "name": "Simple Gravestones",
+            "description": "A mod to add simple gravestones. Designed to have its source looked at and customized.",
+            "contributors": {
+                "ThatSkadoosh": "Owner"
+            },
+            "contact": {},
+            "icon": "assets/simple_gravestones/icon.png",
+            "license": "MIT"
+        },
+        "intermediate_mappings": "net.fabricmc:intermediary",
+        "entrypoints": {
+            "init": "com.skadoosh.gravestones.Gravestones",
+            "client_init": "com.skadoosh.gravestones.ClientLoader",
+            "fabric-datagen": [
+                "com.skadoosh.gravestones.datagen.Datagen"
+            ]
+        },
+        "depends": [
+            {
+                "id": "quilt_loader",
+                "versions": ">=0.19.1"
+            },
+            {
+                "id": "quilted_fabric_api",
+                "versions": ">=7.0.2"
+            },
+            {
+                "id": "minecraft",
+                "versions": ">=1.20"
+            }
+        ]
+    },
+    "mixin": "simple_gravestones.mixins.json"
+}

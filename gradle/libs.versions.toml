@@ -1,0 +1,49 @@
+# The latest versions are available at https://quiltmc.org/en/usage/latest-versions
+[versions]
+minecraft = "1.21"
+quilt_mappings = "1.21+build.5"
+
+quilt_loom = "1.7.4"
+quilt_loader = "0.26.4-beta.5"
+
+quilted_fabric_api = "11.0.0-alpha.3+0.100.7-1.21"
+cca = '6.1.1'
+xaeros_world = "373K4YJh"
+
+voice_chat_api = "2.4.11"
+voice_chat_groups = "fabric-1.21.1-1.6.1"
+voice_chat = "fabric-1.21.1-2.5.21"
+voice_chat_admiral = "0.4.5+1.21+fabric"
+voice_chat_perms = "0.1-SNAPSHOT"
+
+[libraries]
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+quilt_mappings = { module = "org.quiltmc:quilt-mappings", version.ref = "quilt_mappings" }
+quilt_loader = { module = "org.quiltmc:quilt-loader", version.ref = "quilt_loader" }
+
+quilted_fabric_api = { module = "org.quiltmc.quilted-fabric-api:quilted-fabric-api", version.ref = "quilted_fabric_api" }
+quilted_fabric_api_deprecated = { module = "org.quiltmc.quilted-fabric-api:quilted-fabric-api-deprecated", version.ref = "quilted_fabric_api" }
+
+cca-base = { module = "org.ladysnake.cardinal-components-api:cardinal-components-base", version.ref = "cca" }
+cca-world = { module = "org.ladysnake.cardinal-components-api:cardinal-components-world", version.ref = "cca" }
+cca-entity = { module = "org.ladysnake.cardinal-components-api:cardinal-components-entity", version.ref = "cca" }
+cca-scoreboard = { module = "org.ladysnake.cardinal-components-api:cardinal-components-scoreboard", version.ref = "cca" }
+
+voice_chat_api = { module = "de.maxhenkel.voicechat:voicechat-api", version.ref = "voice_chat_api" }
+voice_chat_main =  { module = "maven.modrinth:simple-voice-chat", version.ref = "voice_chat" }
+# voice_chat_groups =  { module = "maven.modrinth:1LE7mid6", version.ref = "voice_chat_groups" }
+# voice_chat_admiral =  { module = "maven.modrinth:admiral", version.ref = "voice_chat_admiral" }
+# voice_chat_perms =  { module = "me.lucko:fabric-permissions-api", version.ref = "voice_chat_perms" }
+
+xaeros_world = { module = "maven.modrinth:NcUtCpym", version.ref = "xaeros_world"}
+
+# If you have multiple similar dependencies, you can declare a dependency bundle and reference it on the build script with "libs.bundles.example".
+[bundles]
+
+quilted_fabric_api = ["quilted_fabric_api", "quilted_fabric_api_deprecated"]
+cca = [ "cca-base", "cca-world", "cca-entity", "cca-scoreboard" ]
+xaeros = [ "xaeros_world" ]
+voicechat = [ "voice_chat_api", "voice_chat_main" ]
+
+[plugins]
+quilt_loom = { id = "org.quiltmc.loom", version.ref = "quilt_loom" }

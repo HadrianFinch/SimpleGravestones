@@ -1,0 +1,17 @@
+{
+  "bifrost.colorized.dimension.astral_wastes": "§7Astal Wastes§r",
+  "bifrost.colorized.dimension.overworld": "§bOverworld§r",
+  "bifrost.colorized.dimension.the_end": "§dEnd§r",
+  "bifrost.colorized.dimension.the_nether": "§4Nether§r",
+  "block.fall_games.gravestone": "Gravestone",
+  "block.fall_games.team_base": "Team Base (Must be place by team member!)",
+  "block.simple_gravestones.carved_runestone": "Carved Runestone",
+  "block.simple_gravestones.deployer": "Deployer",
+  "block.simple_gravestones.destroyer": "Destroyer",
+  "block.simple_gravestones.runic_keystone": "Runic Keystone",
+  "item.fall_games.everstar": "The Everstar",
+  "item.fall_games.grave_token": "Grave Token",
+  "item.simple_gravestones.bifrost_key": "Bifrost Key",
+  "itemGroup.simple_gravestones.birfost": "Bifrost, The Rainbow Bridge",
+  "tooltip.bifrost_key.title": "§3§lBifrost Key§r"
+}
